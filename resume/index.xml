@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resume on Peixin Xu Peisonal Website</title>
+    <link>https://xcanton.github.io/resume/</link>
+    <description>Recent content in Resume on Peixin Xu Peisonal Website</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xcanton.github.io/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/resume/curriculum-vitae/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcanton.github.io/resume/curriculum-vitae/</guid>
+      <description>徐培鑫 📞 13719024566 📬 workshoprd@163.com 📍 CET-6、IELTS（7.0）
+🏠 https://xcanton.github.io
+自我描述 ​	我认为自己是一个自主学习能力强的人。在北京科技大学就读本科的期间，我在就读_大数据管理与应用_ 之余进修了_物联网工程_ 双学位，并且顺利获得两个专业的学位证。在学习过程中，我乐于探索并迅速找到问题的解决方案。期间我参与了刘学娟教授、寇明婷教授、李晓辉教授、宁焕生教授和李刚教授的学术项目，并取得部分成果。
+​	逐步探索的过程中，我发现自己对深度学习领域展现出浓厚的兴趣。为此我参与了多个关于深度学习的项目，并从中获取了宝贵的经验与知识。我认为计算机视觉领域和自然语言处理领域应当在一定程度结合，并从较为单一的应用领域扩展到更大的应用层面，即多模态的发展。我也将此作为短期的发展方向与目标。
+​	为实现该目标，我认为一定的文献阅读与论文复现是必要的。近期我也开始我的学习计划，也将其列在下方：
+Computer Vision Field: https://github.com/Xcanton/VisionProfile Natural Language Processing Field: To Do Multi-modality Neural Network Field: To Do 教育经历 学术经历 学术期刊
+[1] 寇明婷,杨一帆,徐培鑫,陈凯华. 税收政策迭加下企业研发操纵行为变化与影响研究[J].系统工程理论与实践.(Under Review) [2] 徐培鑫,李晓辉. 基于MBA学习者特征的慕课设计策略[J]. 新商务周刊,2020(14):179-180, 182. 会议期刊
+[1] 寇明婷,杨一帆,徐培鑫,陈凯华. 得偿以愿还是得不偿失：税收政策组合对企业研发操纵行为的量化研究[A].中国技术经济论坛2021·呼和浩特[C]中国社会科学院数技经所,2021.
+[2] 寇明婷,杨一帆,徐培鑫. 税收优惠与研发操纵：基于高新技术企业上市公司的实证研究[A].第十六届中国科技政策与管理学术年会[C]中国科学学与科技政策研究会,2020.
+毕业论文
+徐培鑫, 刘学娟. 基于微博评论的舆情导向性推荐算法研究 徐培鑫, 李刚. 基于GRU和Self-Attention结构的循环神经网络音乐推荐算法研究 Research Proposal
+Mutual Communication with Neighboring Vehicles or Rode Side Units for Visual Multi-Sensor Multi-Agent(VMSMA) Trajectory Planning for Autonomous Vehicles.</description>
+    </item>
+    
+  </channel>
+</rss>
