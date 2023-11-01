@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>baichuan on Peixin Xu Peisonal Website</title>
+    <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/</link>
+    <description>Recent content in baichuan on Peixin Xu Peisonal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Nov 2023 15:43:13 +0800</lastBuildDate>
+    <atom:link href="https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>baichuan-v2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/baichuan-v2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/baichuan-v2/</guid>
+      <description>Baichuan-v2 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/readme/</guid>
+      <description>Baichuan </description>
+    </item>
+  </channel>
+</rss>

@@ -4,44 +4,312 @@
     <title>Peixin Xu Peisonal Website</title>
     <link>https://xcanton.github.io/</link>
     <description>Recent content on Peixin Xu Peisonal Website</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://xcanton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Nov 2023 15:43:17 +0800</lastBuildDate>
+    <atom:link href="https://xcanton.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linking-writing-processes-to-writing-quality</title>
+      <link>https://xcanton.github.io/kaggles/kaggle_notes/linking-writing-processes-to-writing-quality/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:17 +0800</pubDate>
+      <guid>https://xcanton.github.io/kaggles/kaggle_notes/linking-writing-processes-to-writing-quality/</guid>
+      <description> description: &amp;gt;- https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality Linking Writing Processes to Writing Quality </description>
+    </item>
+    <item>
+      <title>baichuan-v2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/baichuan-v2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/baichuan-v2/</guid>
+      <description>Baichuan-v2 </description>
+    </item>
+    <item>
+      <title>bert</title>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/bert/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/bert/</guid>
+      <description>Bert </description>
+    </item>
+    <item>
+      <title>bloom</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/bloom/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/bloom/</guid>
+      <description>Bloom 论文BLOOM: A 176B-Parameter Open-Access Multilingual Language Model的阅读记录。</description>
+    </item>
+    <item>
+      <title>can-lms-learn-new-entities-from-descriptions</title>
+      <link>https://xcanton.github.io/notes/llm_notes/knowledge-injection/can-lms-learn-new-entities-from-descriptions/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/knowledge-injection/can-lms-learn-new-entities-from-descriptions/</guid>
+      <description>Can LMs Learn New Entities from Descriptions? 论文Can LMs Learn New Entities from Descriptions? Challenges in Propagating Injected Knowledge的阅读记录。</description>
+    </item>
+    <item>
+      <title>chatglm-v2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/chatglm-v2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/chatglm-v2/</guid>
+      <description>ChatGLM-v2 </description>
+    </item>
+    <item>
+      <title>chatglm-v3</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/chatglm-v3/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/chatglm-v3/</guid>
+      <description>ChatGLM-v3 </description>
+    </item>
+    <item>
+      <title>dpo</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/dpo/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/dpo/</guid>
+      <description>DPO </description>
+    </item>
+    <item>
+      <title>flan</title>
+      <link>https://xcanton.github.io/notes/llm_notes/other-papers/flan/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/other-papers/flan/</guid>
+      <description>Flan 论文The Flan Collection: Designing Data and Methods for Effective Instruction Tuning的阅读记录。</description>
+    </item>
+    <item>
+      <title>glm</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/glm/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/glm/</guid>
+      <description>GLM 论文GLM-130B: An Open Bilingual Pre-trained Model的阅读记录。</description>
+    </item>
+    <item>
+      <title>gpt</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt/</guid>
+      <description> description: &amp;lsquo;Paper :: Improving Language Understanding by Generative Pre-Training&amp;rsquo; GPT </description>
+    </item>
+    <item>
+      <title>gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe/</guid>
+      <description>GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE </description>
+    </item>
+    <item>
+      <title>gpt2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt2/</guid>
+      <description>GPT2 </description>
+    </item>
+    <item>
+      <title>how-to-index-item-ids</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/how-to-index-item-ids/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/how-to-index-item-ids/</guid>
+      <description>How to Index Item IDs 论文How to Index Item IDs for Recommendation Foundation Models的阅读记录。</description>
+    </item>
+    <item>
+      <title>instruction-gpt</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/instruction-gpt/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/instruction-gpt/</guid>
+      <description>Instruction-GPT </description>
+    </item>
+    <item>
+      <title>llama</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/llama/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/llama/</guid>
+      <description>LLaMa </description>
+    </item>
+    <item>
+      <title>lm-infinite</title>
+      <link>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/lm-infinite/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/lm-infinite/</guid>
+      <description>LM-Infinite 论文《LM-INFINITE: SIMPLE ON-THE-FLY LENGTH GENERALIZATION FOR LARGE LANGUAGE MODELS的阅读记录。
+Objective 针对开源大模型在长文本任务表现不佳的问题，提出对transformer的掩码与距离进行限制，提升模型在长文本生成内容的流畅度和相关性。
+length generalization failure：生成长度超过训练文本长度（通常是预训练的平均长度）的回答。（the typical length in pre-training）</description>
+    </item>
+    <item>
+      <title>lora</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/lora/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/lora/</guid>
+      <description>Lora </description>
+    </item>
+    <item>
+      <title>multi-head-attention</title>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/multi-head-attention/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/multi-head-attention/</guid>
+      <description>Multi-head Attention </description>
+    </item>
+    <item>
+      <title>neftune</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/neftune/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/neftune/</guid>
+      <description>NEFTune </description>
+    </item>
+    <item>
+      <title>other-llms</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/other-llms/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/other-llms/</guid>
+      <description>Other LLMs </description>
+    </item>
+    <item>
+      <title>p-tuning</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning/</guid>
+      <description>P-Tuning </description>
+    </item>
+    <item>
+      <title>p-tuning-v2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning-v2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning-v2/</guid>
+      <description>P-Tuning V2 </description>
+    </item>
+    <item>
+      <title>ppo</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/ppo/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/ppo/</guid>
+      <description>PPO </description>
+    </item>
+    <item>
+      <title>q-lora</title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/q-lora/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/q-lora/</guid>
+      <description>Q-Lora </description>
+    </item>
+    <item>
+      <title>qwen-v2</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/qwen-v2/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/qwen-v2/</guid>
+      <description>Qwen-v2 </description>
+    </item>
+    <item>
+      <title>self-attention</title>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/self-attention/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/self-attention/</guid>
+      <description>Self-Attention </description>
+    </item>
+    <item>
+      <title>t5</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/t5/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/t5/</guid>
+      <description>T5 论文Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer的阅读记录。</description>
+    </item>
+    <item>
+      <title>transformer</title>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/transformer/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/transformer/</guid>
+      <description>Transformer </description>
+    </item>
+    <item>
+      <title>tree-based-models-won-in-tabular</title>
+      <link>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/tree-based-models-won-in-tabular/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/tree-based-models-won-in-tabular/</guid>
+      <description>Tree-based models won in tabular 论文Why do tree-based models still outperform deep learning on tabular data?的阅读记录。</description>
+    </item>
+    <item>
+      <title>where-to-go-next-for-recommendation-systems</title>
+      <link>https://xcanton.github.io/notes/llm_notes/other-papers/where-to-go-next-for-recommendation-systems/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/other-papers/where-to-go-next-for-recommendation-systems/</guid>
+      <description>Where to go Next for Recommendation Systems? 论文Where to Go Next for Recommender Systems? ID- vs. Modality-based Recommender Models Revisited的阅读记录。</description>
+    </item>
     <item>
       <title></title>
-      <link>https://xcanton.github.io/resume/curriculum-vitae/</link>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://xcanton.github.io/resume/curriculum-vitae/</guid>
-      <description>徐培鑫 📞 13719024566 📬 workshoprd@163.com 📍 CET-6、IELTS（7.0）
-🏠 https://xcanton.github.io
-自我描述 ​	我认为自己是一个自主学习能力强的人。在北京科技大学就读本科的期间，我在就读_大数据管理与应用_ 之余进修了_物联网工程_ 双学位，并且顺利获得两个专业的学位证。在学习过程中，我乐于探索并迅速找到问题的解决方案。期间我参与了刘学娟教授、寇明婷教授、李晓辉教授、宁焕生教授和李刚教授的学术项目，并取得部分成果。
-​	逐步探索的过程中，我发现自己对深度学习领域展现出浓厚的兴趣。为此我参与了多个关于深度学习的项目，并从中获取了宝贵的经验与知识。我认为计算机视觉领域和自然语言处理领域应当在一定程度结合，并从较为单一的应用领域扩展到更大的应用层面，即多模态的发展。我也将此作为短期的发展方向与目标。
-​	为实现该目标，我认为一定的文献阅读与论文复现是必要的。近期我也开始我的学习计划，也将其列在下方：
-Computer Vision Field: https://github.com/Xcanton/VisionProfile Natural Language Processing Field: To Do Multi-modality Neural Network Field: To Do 教育经历 学术经历 学术期刊
-[1] 寇明婷,杨一帆,徐培鑫,陈凯华. 税收政策迭加下企业研发操纵行为变化与影响研究[J].系统工程理论与实践.(Under Review) [2] 徐培鑫,李晓辉. 基于MBA学习者特征的慕课设计策略[J]. 新商务周刊,2020(14):179-180, 182. 会议期刊
-[1] 寇明婷,杨一帆,徐培鑫,陈凯华. 得偿以愿还是得不偿失：税收政策组合对企业研发操纵行为的量化研究[A].中国技术经济论坛2021·呼和浩特[C]中国社会科学院数技经所,2021.
-[2] 寇明婷,杨一帆,徐培鑫. 税收优惠与研发操纵：基于高新技术企业上市公司的实证研究[A].第十六届中国科技政策与管理学术年会[C]中国科学学与科技政策研究会,2020.
-毕业论文
-徐培鑫, 刘学娟. 基于微博评论的舆情导向性推荐算法研究 徐培鑫, 李刚. 基于GRU和Self-Attention结构的循环神经网络音乐推荐算法研究 Research Proposal
-Mutual Communication with Neighboring Vehicles or Rode Side Units for Visual Multi-Sensor Multi-Agent(VMSMA) Trajectory Planning for Autonomous Vehicles.</description>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/readme/</guid>
+      <description>Attention </description>
     </item>
-    
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/readme/</guid>
+      <description>Pre-trained Models </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/readme/</guid>
+      <description>TabLLM 论文TabLLM: Few-shot Classification of Tabular Data with Large Language Models的阅读记录。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/readme/</guid>
+      <description>Baichuan </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/readme/</guid>
+      <description>ChatGLM 论文GLM: General Language Model Pretraining with Autoregressive Blank Infilling的阅读记录。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/readme/</guid>
+      <description>GPT4 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/readme/</guid>
+      <description>GPT Series </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/readme/</guid>
+      <description>LLaMa Series </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/readme/</guid>
+      <description>P5 论文Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt &amp;amp; Predict Paradigm (P5)的阅读记录。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/readme/</guid>
+      <description>Qwen Qwen Technical Report的阅读记录。</description>
+    </item>
     <item>
       <title>Math Braintrainer</title>
       <link>https://xcanton.github.io/projects/math-brain-trainer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://xcanton.github.io/projects/math-brain-trainer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Surprise Surprise</title>
       <link>https://xcanton.github.io/articles/article/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://xcanton.github.io/articles/article/</guid>
       <description>Thank you for your support! Hello. If you like this template, I&amp;rsquo;d be happy to get a coffee donation :)</description>
     </item>
-    
   </channel>
 </rss>

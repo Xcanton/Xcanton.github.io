@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>the-dawn-of-llm-era on Peixin Xu Peisonal Website</title>
+    <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/</link>
+    <description>Recent content in the-dawn-of-llm-era on Peixin Xu Peisonal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Nov 2023 15:43:13 +0800</lastBuildDate>
+    <atom:link href="https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bloom</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/bloom/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/bloom/</guid>
+      <description>Bloom 论文BLOOM: A 176B-Parameter Open-Access Multilingual Language Model的阅读记录。</description>
+    </item>
+    <item>
+      <title>other-llms</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/other-llms/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/other-llms/</guid>
+      <description>Other LLMs </description>
+    </item>
+    <item>
+      <title>t5</title>
+      <link>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/t5/</link>
+      <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/t5/</guid>
+      <description>T5 论文Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer的阅读记录。</description>
+    </item>
+  </channel>
+</rss>
