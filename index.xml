@@ -278,10 +278,17 @@ length generalization failure：生成长度超过训练文本长度（通常是
     </item>
     <item>
       <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/readme/</guid>
+      <description>_index </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://xcanton.github.io/notes/llm_notes/summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xcanton.github.io/notes/llm_notes/summary/</guid>
-      <description>Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions? other-papers _index Flan Where to go Next for Recommendation Systems? TabLLM _index Tree-based models won in tabular 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora </description>
+      <description>Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?</description>
     </item>
     <item>
       <title></title>
@@ -345,13 +352,6 @@ length generalization failure：生成长度超过训练文本长度（通常是
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xcanton.github.io/notes/llm_notes/tuning/readme/</guid>
       <description>tuning </description>
-    </item>
-    <item>
-      <title>LLM_notes</title>
-      <link>https://xcanton.github.io/notes/llm_notes/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xcanton.github.io/notes/llm_notes/readme/</guid>
-      <description></description>
     </item>
     <item>
       <title>Math Braintrainer</title>
