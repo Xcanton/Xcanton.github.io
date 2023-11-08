@@ -11,16 +11,7 @@
     <loc>https://xcanton.github.io/</loc>
     <lastmod>2023-11-01T15:43:17+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/baichuan-v2/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/bert/</loc>
@@ -30,9 +21,6 @@
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/knowledge-injection/can-lms-learn-new-entities-from-descriptions/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/chatglm-v2/</loc>
@@ -56,34 +44,16 @@
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt2/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/how-to-index-item-ids/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/instruction-gpt/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/knowledge-injection/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/llama/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/lm-infinite/</loc>
@@ -98,13 +68,7 @@
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/neftune/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/other-llms/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/other-papers/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning/</loc>
@@ -113,19 +77,10 @@
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/p-tuning-v2/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/ppo/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/q-lora/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/qwen-v2/</loc>
@@ -137,19 +92,10 @@
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/t5/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/transformer/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/tree-based-models-won-in-tabular/</loc>
-    <lastmod>2023-11-01T15:43:13+08:00</lastmod>
-  </url><url>
-    <loc>https://xcanton.github.io/notes/llm_notes/tuning/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/other-papers/where-to-go-next-for-recommendation-systems/</loc>
@@ -159,7 +105,17 @@
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/readme/</loc>
   </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/knowledge-injection/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/other-papers/readme/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/summary/</loc>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/readme/</loc>
   </url><url>
@@ -175,20 +131,60 @@
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/readme/</loc>
   </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/tuning/readme/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/articles/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/baichuan/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/</loc>
   </url><url>
     <loc>https://xcanton.github.io/categories/</loc>
   </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/chatglm/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/contact/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/gpt-series/gpt4/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/knowledge-injection/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/llama-series/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/readme/</loc>
   </url><url>
     <loc>https://xcanton.github.io/projects/math-brain-trainer/</loc>
   </url><url>
+    <loc>https://xcanton.github.io/notes/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/other-papers/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/p5/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/projects/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/</loc>
   </url><url>
     <loc>https://xcanton.github.io/resume/</loc>
   </url><url>
     <loc>https://xcanton.github.io/articles/article/</loc>
   </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/other-papers/tabllm/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/tags/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/tuning/</loc>
   </url>
 </urlset>
