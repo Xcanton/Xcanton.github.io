@@ -288,7 +288,7 @@ length generalization failure：生成长度超过训练文本长度（通常是
       <link>https://xcanton.github.io/notes/llm_notes/summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xcanton.github.io/notes/llm_notes/summary/</guid>
-      <description>Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?</description>
+      <description>Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora MOE-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?</description>
     </item>
     <item>
       <title></title>
@@ -345,6 +345,13 @@ length generalization failure：生成长度超过训练文本长度（通常是
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/readme/</guid>
       <description>🌅 the-dawn-of-llm-era </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/tuning/moe-lora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/tuning/moe-lora/</guid>
+      <description>MOE-Lora </description>
     </item>
     <item>
       <title></title>
