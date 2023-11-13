@@ -7,9 +7,9 @@
 <meta name="robots" content="index, follow">
 <title>Peixin Xu Peisonal Website</title>
 <meta name="keywords" content="" />
-<meta name="description" content="Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora MOE-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?">
+<meta name="description" content="https://www.kaggle.com/competitions/predict-energy-behavior-of-prosumers">
 <meta name="author" content="Peixin XU">
-<link rel="canonical" href="https://xcanton.github.io/notes/llm_notes/summary/" />
+<link rel="canonical" href="https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/readme/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7bfe087ae72df31787ec7a1360dd05ee246a179b51cf7a30a904b39d7f813b69.css" integrity="sha256-e/4Ieuct8xeH7HoTYN0F7iRqF5tRz3owqQSznX&#43;BO2k=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.5b9ae0304f93db6cc493f51846f012428af399c614b4f2fbdb7fa59dd4d5ef5b.js" integrity="sha256-W5rgME&#43;T22zEk/UYRvASQorzmcYUtPL723&#43;lndTV71s="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -124,10 +124,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://xcanton.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xcanton.github.io/notes/">Notes</a></div>
+    <div class="breadcrumbs"><a href="https://xcanton.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://xcanton.github.io/kaggles/">Kaggles</a></div>
     <h1 class="post-title">
       
     </h1>
+    <div class="post-description">
+      https://www.kaggle.com/competitions/predict-energy-behavior-of-prosumers
+    </div>
     <div class="post-meta">1 min&amp;nbsp;·&amp;nbsp;Peixin XU</div>
   </header> <div class="toc">
     <details >
@@ -137,7 +140,7 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#table-of-contents" aria-label="Table of contents">Table of contents</a>
+                    <a href="#enefit---predict-energy-behavior-of-prosumers" aria-label="Enefit - Predict Energy Behavior of Prosumers">Enefit - Predict Energy Behavior of Prosumers</a>
                 </li>
             </ul>
         </div>
@@ -145,133 +148,7 @@
 </div>
 
   <div class="post-content">
-  <h1 id="table-of-contents">Table of contents</h1>
-<ul>
-<li><a href="README.md">_index</a></li>
-<li><a href="before-llm-era/README.md">🌌 before-llm-era</a>
-<ul>
-<li><a href="before-llm-era/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/README.md">Pre-trained Models</a>
-<ul>
-<li><a href="before-llm-era/pre-trained-models/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/bert.md">Bert</a></li>
-<li><a href="before-llm-era/pre-trained-models/transformer.md">Transformer</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/README.md">Attention</a>
-<ul>
-<li><a href="before-llm-era/pre-trained-models/attention/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/multi-head-attention.md">Multi-head Attention</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/self-attention.md">Self-Attention</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/README.md">🌅 the-dawn-of-llm-era</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/bloom.md">Bloom</a></li>
-<li><a href="the-dawn-of-llm-era/other-llms.md">Other LLMs</a></li>
-<li><a href="the-dawn-of-llm-era/t5.md">T5</a></li>
-<li><a href="the-dawn-of-llm-era/baichuan/README.md">Baichuan</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/baichuan/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/baichuan/baichuan-v2.md">Baichuan-v2</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/chatglm/README.md">ChatGLM</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/chatglm/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/chatglm-v2.md">ChatGLM-v2</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/chatglm-v3.md">ChatGLM-v3</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/glm.md">GLM</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/gpt-series/README.md">GPT Series</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/gpt-series/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt.md">gpt</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt2.md">GPT2</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/instruction-gpt.md">Instruction-GPT</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/README.md">GPT4</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe.md">GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/llama-series/README.md">LLaMa Series</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/llama-series/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/llama-series/llama.md">LLaMa</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/p5/README.md">P5</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/p5/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/p5/how-to-index-item-ids.md">How to Index Item IDs</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/qwen/README.md">Qwen</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/qwen/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/qwen/qwen-v2.md">Qwen-v2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="tuning/README.md">tuning</a>
-<ul>
-<li><a href="tuning/_index.md">_index</a></li>
-<li><a href="tuning/dpo.md">DPO</a></li>
-<li><a href="tuning/lora.md">Lora</a></li>
-<li><a href="tuning/neftune.md">NEFTune</a></li>
-<li><a href="tuning/p-tuning-v2.md">P-Tuning V2</a></li>
-<li><a href="tuning/p-tuning.md">P-Tuning</a></li>
-<li><a href="tuning/ppo.md">PPO</a></li>
-<li><a href="tuning/q-lora.md">Q-Lora</a></li>
-<li><a href="tuning/moe-lora.md">MOE-Lora</a></li>
-</ul>
-</li>
-<li><a href="hullusion-and-training-innovations/README.md">🤔 hullusion-and-training-innovations</a>
-<ul>
-<li><a href="hullusion-and-training-innovations/_index.md">_index</a></li>
-<li><a href="hullusion-and-training-innovations/lm-infinite.md">LM-Infinite</a></li>
-</ul>
-</li>
-<li><a href="knowledge-injection/README.md">knowledge-injection</a>
-<ul>
-<li><a href="knowledge-injection/_index.md">_index</a></li>
-<li><a href="knowledge-injection/can-lms-learn-new-entities-from-descriptions.md">Can LMs Learn New Entities from Descriptions?</a></li>
-</ul>
-</li>
-<li><a href="timeseries-prediction-of-llm/README.md">TimeSeries Prediction of LLM</a>
-<ul>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/README.md">TS-for-LLM</a>
-<ul>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/one-fits-all-power-general-time-series-analysis-by-pretrained-lm.md">One Fits All: Power General Time Series Analysis by Pretrained LM</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/llm4ts-two-stage-fine-tuning-for-time-series-forecasting-with-pre-trained-llms.md">LLM4TS: Two-Stage Fine-Tuning for Time-Series Forecasting with Pre-Trained LLMs</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/llm-for-time-series-text-prototype-aligned-embedding-to-activate-llms-ability-for-time-series.md">LLM for Time Series：Text Prototype Aligned Embedding to Activate LLM’s Ability for Time Series</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting.md">TEMPO: prompt-based generative pre-trained transformer for time series forecasting</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="other-papers/README.md">other-papers</a>
-<ul>
-<li><a href="other-papers/_index.md">_index</a></li>
-<li><a href="other-papers/flan.md">Flan</a></li>
-<li><a href="other-papers/where-to-go-next-for-recommendation-systems.md">Where to go Next for Recommendation Systems?</a></li>
-<li><a href="other-papers/tabllm/README.md">TabLLM</a>
-<ul>
-<li><a href="other-papers/tabllm/_index.md">_index</a></li>
-<li><a href="other-papers/tabllm/tree-based-models-won-in-tabular.md">Tree-based models won in tabular</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+  <h1 id="enefit---predict-energy-behavior-of-prosumers">Enefit - Predict Energy Behavior of Prosumers</h1>
 
   </div>
 

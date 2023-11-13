@@ -5,7 +5,7 @@
     <loc>https://xcanton.github.io/kaggles/</loc>
     <lastmod>2023-11-01T15:43:17+08:00</lastmod>
   </url><url>
-    <loc>https://xcanton.github.io/kaggles/kaggle_notes/linking-writing-processes-to-writing-quality/</loc>
+    <loc>https://xcanton.github.io/kaggles/kaggle_notes/readme/</loc>
     <lastmod>2023-11-01T15:43:17+08:00</lastmod>
   </url><url>
     <loc>https://xcanton.github.io/</loc>
@@ -101,6 +101,12 @@
     <loc>https://xcanton.github.io/notes/llm_notes/other-papers/where-to-go-next-for-recommendation-systems/</loc>
     <lastmod>2023-11-01T15:43:13+08:00</lastmod>
   </url><url>
+    <loc>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/fang-an-tiao-yan/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/kaggles/kaggle_notes/summary/</loc>
+  </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/attention/readme/</loc>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/before-llm-era/pre-trained-models/readme/</loc>
@@ -134,6 +140,18 @@
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/qwen/readme/</loc>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/the-dawn-of-llm-era/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm-for-time-series-text-prototype-aligned-embedding-to-activate-llms-ability-for-time-series/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm4ts-two-stage-fine-tuning-for-time-series-forecasting-with-pre-trained-llms/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/one-fits-all-power-general-time-series-analysis-by-pretrained-lm/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/readme/</loc>
+  </url><url>
+    <loc>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting/</loc>
   </url><url>
     <loc>https://xcanton.github.io/notes/llm_notes/tuning/moe-lora/</loc>
   </url><url>

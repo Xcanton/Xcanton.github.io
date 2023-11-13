@@ -10,10 +10,31 @@
     <atom:link href="https://xcanton.github.io/kaggles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linking-writing-processes-to-writing-quality</title>
-      <link>https://xcanton.github.io/kaggles/kaggle_notes/linking-writing-processes-to-writing-quality/</link>
+      <link>https://xcanton.github.io/kaggles/kaggle_notes/readme/</link>
       <pubDate>Wed, 01 Nov 2023 15:43:17 +0800</pubDate>
-      <guid>https://xcanton.github.io/kaggles/kaggle_notes/linking-writing-processes-to-writing-quality/</guid>
+      <guid>https://xcanton.github.io/kaggles/kaggle_notes/readme/</guid>
       <description> description: &amp;gt;- https://www.kaggle.com/competitions/linking-writing-processes-to-writing-quality Linking Writing Processes to Writing Quality </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/fang-an-tiao-yan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/fang-an-tiao-yan/</guid>
+      <description>方案调研 数据处理 训练方式 模型架构 References </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/kaggles/kaggle_notes/enefit-predict-energy-behavior-of-prosumers/readme/</guid>
+      <description>Enefit - Predict Energy Behavior of Prosumers </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/kaggles/kaggle_notes/summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/kaggles/kaggle_notes/summary/</guid>
+      <description>Table of contents linking-writing-processes-to-writing-quality Enefit - Predict Energy Behavior of Prosumers 方案调研 </description>
     </item>
   </channel>
 </rss>

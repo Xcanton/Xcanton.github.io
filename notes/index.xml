@@ -21,5 +21,49 @@
       <guid>https://xcanton.github.io/notes/llm_notes/summary/</guid>
       <description>Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora MOE-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?</description>
     </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/readme/</guid>
+      <description>TimeSeries Prediction of LLM 目前大语言模型在时间序列预测的研究主要分成了两个方向:
+一个是LLM -for-TS: 从零开始设计并预训练适用于时间序列的基础大模型, 然后可根据各种下游任务对模型进行微调。这条路径是最基本的解决方案，基于大量数据，通过预训练向模型灌输时间序列相关知识。但时间序列数据更专业且涉及隐私问题，获取大量的时间序列数据困难， 而且由于不同领域的时间序列数据存在重大差异，需要从头开始构建和训练针对不同垂域的各种模型； 一个是 TS-for-LLM: 设计相应机制对时间序列输入大模型进行适配，使其能够适用于现有的语言模型，从而基于现有的语言模型处理时间序列的各类任务。这条路径也具有一定的挑战性，需要超越原始语言模型的能力，补充时间序列语意信息。 两种方向的区别是：
+一种比较自然的方法是将时间序列当成文本序列，但对处理多变量时间序列比较敏感； 第二种是对时间序列进行tokenize，设计一个模块编码TS tokens,并取代原有LLM的embedding layer， 其核心是创建LLM能够理解的ts embedding。 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm-for-time-series-text-prototype-aligned-embedding-to-activate-llms-ability-for-time-series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm-for-time-series-text-prototype-aligned-embedding-to-activate-llms-ability-for-time-series/</guid>
+      <description>LLM for Time Series：Text Prototype Aligned Embedding to Activate LLM’s Ability for Time Series 论文地址：https://arxiv.org/abs/2308.08241 概要</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm4ts-two-stage-fine-tuning-for-time-series-forecasting-with-pre-trained-llms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/llm4ts-two-stage-fine-tuning-for-time-series-forecasting-with-pre-trained-llms/</guid>
+      <description>LLM4TS: Two-Stage Fine-Tuning for Time-Series Forecasting with Pre-Trained LLMs 论文地址：https://arxiv.org/abs/2308.08469 概要 输入处理类似上一篇文章， 主要尝试解决了两个主要问题： 如何将时间序列数据输入LLM？ 将时间序列转为patch，并通过1d-conv层将每个时序patch转为gpt2 的输入维度大小； 基于look-up 的patch location embedding; 通过channel 独立(通过权重共享间接实现cross-channel交互）的patching， 训练时采用instance-norm，预测时采用RevIN; 将每个patch内的第一个timestamp作为该patch的timestamp， patch内每个timestep的属性进行叠加作为该patch的属性； 如何与现有的LLM进行集成？ 时间序列进行自监督预训练(将LLM适配patch格式的时间序列数据）+下游预测任务微调； 自监督训练时，冻结llm的self-attention和FFN，重新训练输入端和layerNorm; 下游预测任务微调时，先进行linear probing(微调最后一层固定其他）,再微调所有参数的操作 ; 在多个公开数据集上的多变量时间序列预测，few-shot learing 和长时间序列预测超越专家网络模型。 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/one-fits-all-power-general-time-series-analysis-by-pretrained-lm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/one-fits-all-power-general-time-series-analysis-by-pretrained-lm/</guid>
+      <description>One Fits All: Power General Time Series Analysis by Pretrained LM 论文地址：https://arxiv.org/abs/2302.11939 论文代码地址：https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All 概要 输入端先进行先对序列进行RevIN(instanceNorm), 缓解分布漂移； 再参考PatchTST， 将时间序列切割为片段处理，每个片段有postion embedding; 去除token embedding层，将切分的片段输入linear层转为模型需要的输入维度； 冻结编码知识的 multi-head 和FFN层，微调LayerNorm和位置编码； 文章认为基于文本域训练的llm适用于时间序列的一个可能原因是， 自监督的self-attention模块在训练过程中学会了和和具体数据无关的一些运算规则，比如PCA（通过对比对比两个模块的中间结果），使之成为一个广义的计算引擎； 以GPT2为backbone进行了时间序列异常检测、长短期预测等实验，效果均较好; </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/readme/</guid>
+      <description>TS-for-LLM </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting/</guid>
+      <description>TEMPO: prompt-based generative pre-trained transformer for time series forecasting 论文地址：https://arxiv.org/abs/2310.04948 </description>
+    </item>
   </channel>
 </rss>
