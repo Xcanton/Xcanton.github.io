@@ -12,9 +12,7 @@
       <link>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/lm-infinite/</link>
       <pubDate>Wed, 01 Nov 2023 15:43:13 +0800</pubDate>
       <guid>https://xcanton.github.io/notes/llm_notes/hullusion-and-training-innovations/lm-infinite/</guid>
-      <description>LM-Infinite 论文《LM-INFINITE: SIMPLE ON-THE-FLY LENGTH GENERALIZATION FOR LARGE LANGUAGE MODELS的阅读记录。
-Objective 针对开源大模型在长文本任务表现不佳的问题，提出对transformer的掩码与距离进行限制，提升模型在长文本生成内容的流畅度和相关性。
-length generalization failure：生成长度超过训练文本长度（通常是预训练的平均长度）的回答。（the typical length in pre-training）</description>
+      <description>LM-Infinite 论文《LM-INFINITE: SIMPLE ON-THE-FLY LENGTH GENERALIZATION FOR LARGE LANGUAGE MODELS的阅读记录。&#xA;Objective 针对开源大模型在长文本任务表现不佳的问题，提出对transformer的掩码与距离进行限制，提升模型在长文本生成内容的流畅度和相关性。&#xA;length generalization failure：生成长度超过训练文本长度（通常是预训练的平均长度）的回答。（the typical length in pre-training）</description>
     </item>
     <item>
       <title></title>

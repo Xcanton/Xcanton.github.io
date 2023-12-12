@@ -7,9 +7,9 @@
 <meta name="robots" content="index, follow">
 <title>Peixin Xu Peisonal Website</title>
 <meta name="keywords" content="" />
-<meta name="description" content="Table of contents _index 🌌 before-llm-era _index Pre-trained Models _index Bert Transformer Attention _index Multi-head Attention Self-Attention 🌅 the-dawn-of-llm-era _index Bloom Other LLMs T5 Baichuan _index Baichuan-v2 ChatGLM _index ChatGLM-v2 ChatGLM-v3 GLM GPT Series _index gpt GPT2 Instruction-GPT GPT4 _index GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE LLaMa Series _index LLaMa P5 _index How to Index Item IDs Qwen _index Qwen-v2 tuning _index DPO Lora NEFTune P-Tuning V2 P-Tuning PPO Q-Lora MOE-Lora 🤔 hullusion-and-training-innovations _index LM-Infinite knowledge-injection _index Can LMs Learn New Entities from Descriptions?">
+<meta name="description" content="https://arxiv.org/abs/2310.07820">
 <meta name="author" content="Peixin XU">
-<link rel="canonical" href="https://xcanton.github.io/notes/llm_notes/summary/" />
+<link rel="canonical" href="https://xcanton.github.io/notes/llm_notes/timeseries-prediction-of-llm/ts-for-llm/large-language-models-are-zero-shot-time-series-forecasters-neurips2023/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.7bfe087ae72df31787ec7a1360dd05ee246a179b51cf7a30a904b39d7f813b69.css" integrity="sha256-e/4Ieuct8xeH7HoTYN0F7iRqF5tRz3owqQSznX&#43;BO2k=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.5b9ae0304f93db6cc493f51846f012428af399c614b4f2fbdb7fa59dd4d5ef5b.js" integrity="sha256-W5rgME&#43;T22zEk/UYRvASQorzmcYUtPL723&#43;lndTV71s="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -128,6 +128,9 @@
     <h1 class="post-title">
       
     </h1>
+    <div class="post-description">
+      https://arxiv.org/abs/2310.07820
+    </div>
     <div class="post-meta">1 min&amp;nbsp;·&amp;nbsp;Peixin XU</div>
   </header> <div class="toc">
     <details >
@@ -137,142 +140,59 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#table-of-contents" aria-label="Table of contents">Table of contents</a>
+                    <a href="#large-language-models-are-zero-shot-time-series-forecasters-neurips2023" aria-label="Large Language Models Are Zero-Shot Time Series Forecasters [NeurIPS2023]">Large Language Models Are Zero-Shot Time Series Forecasters [NeurIPS2023]</a><ul>
+                        
+                <li>
+                    <a href="#%e9%92%88%e5%af%b9%e6%95%b0%e5%ad%97token%e7%9a%84%e6%94%b9%e8%bf%9b" aria-label="针对数字Token的改进">针对数字Token的改进</a></li>
+                <li>
+                    <a href="#%e9%92%88%e5%af%b9%e6%95%b0%e5%80%bc%e8%8c%83%e5%9b%b4%e7%9a%84%e6%94%b9%e8%bf%9b" aria-label="针对数值范围的改进">针对数值范围的改进</a></li>
+                <li>
+                    <a href="#%e9%92%88%e5%af%b9%e9%9a%8f%e6%9c%ba%e6%80%a7%e7%9a%84%e6%94%b9%e8%bf%9b" aria-label="针对随机性的改进">针对随机性的改进</a></li>
+                <li>
+                    <a href="#%e5%af%b9%e7%94%9f%e6%88%90%e6%a6%82%e7%8e%87%e6%94%b9%e8%bf%9b%e7%94%b1%e4%ba%8e%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e6%9c%ac" aria-label="对生成概率改进，由于生成的文本">对生成概率改进，由于生成的文本</a></li>
+                <li>
+                    <a href="#%e7%bb%93%e8%ae%ba" aria-label="结论">结论</a>
                 </li>
+            </ul>
+            </li>
             </ul>
         </div>
     </details>
 </div>
 
   <div class="post-content">
-  <h1 id="table-of-contents">Table of contents</h1>
+  <h1 id="large-language-models-are-zero-shot-time-series-forecasters-neurips2023">Large Language Models Are Zero-Shot Time Series Forecasters [NeurIPS2023]</h1>
 <ul>
-<li><a href="README.md">_index</a></li>
-<li><a href="before-llm-era/README.md">🌌 before-llm-era</a>
+<li>论文地址：<a href="https://arxiv.org/abs/2310.07820">https://arxiv.org/abs/2310.07820</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<p>基本的时间预测，通过直接将时序数据用逗号分隔的方式转换成文本输入，通过模型生成其输出以逗号分隔的预测窗口数据。</p>
 <ul>
-<li><a href="before-llm-era/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/README.md">Pre-trained Models</a>
+<li>文本生成模型是自回归模型，天然将文本token按位循环预测下一输出，与时序预测任务形式相同。</li>
+<li>由于是研究Zero-Shot的效果，即在不训练的前提下进行预测，没有训练开销。</li>
+<li>与深度模型不同的是，深度模型能够将数值读成一个整体，而文本生成模型由于Tokenizer的原因，对不同的模型和文本有不同的切分形式，所以该文章针对这一问题做出以下修正方案。</li>
+</ul>
+<h2 id="针对数字token的改进">针对数字Token的改进</h2>
+<!-- raw HTML omitted -->
+<p>由于部分模型的Tokenizer对数字的切分方式不同，从而导致tokenize后对数字变化的表征不同。为了将数字按位划分，需要在黏着分词器（GPT-3）的输入文本中，将数字调整成空格分隔的形式（如果存在空格+数字的token）。而对非黏着分词器（LLaMa）这么做会导致模型认知不同，导致预测结果不好。</p>
+<h2 id="针对数值范围的改进">针对数值范围的改进</h2>
+<p>由于输入token数量的限制，序列如果本身数值大的会导致token数量变多，与自身变化无关，所以对数值范围进行标准化：</p>
 <ul>
-<li><a href="before-llm-era/pre-trained-models/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/bert.md">Bert</a></li>
-<li><a href="before-llm-era/pre-trained-models/transformer.md">Transformer</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/README.md">Attention</a>
-<ul>
-<li><a href="before-llm-era/pre-trained-models/attention/_index.md">_index</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/multi-head-attention.md">Multi-head Attention</a></li>
-<li><a href="before-llm-era/pre-trained-models/attention/self-attention.md">Self-Attention</a></li>
+<li>对LLaMa，论文采用sklearn.preprocessing.MinMaxScaler进行数值缩放（保留8位小数）</li>
+<li>论文说GPT-3能够处理不同维度的数值，所以对GPT-3的数据采用的是仿射变换（affine transformation），具体公式如下</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/README.md">🌅 the-dawn-of-llm-era</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/bloom.md">Bloom</a></li>
-<li><a href="the-dawn-of-llm-era/other-llms.md">Other LLMs</a></li>
-<li><a href="the-dawn-of-llm-era/t5.md">T5</a></li>
-<li><a href="the-dawn-of-llm-era/baichuan/README.md">Baichuan</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/baichuan/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/baichuan/baichuan-v2.md">Baichuan-v2</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/chatglm/README.md">ChatGLM</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/chatglm/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/chatglm-v2.md">ChatGLM-v2</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/chatglm-v3.md">ChatGLM-v3</a></li>
-<li><a href="the-dawn-of-llm-era/chatglm/glm.md">GLM</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/gpt-series/README.md">GPT Series</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/gpt-series/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt.md">gpt</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt2.md">GPT2</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/instruction-gpt.md">Instruction-GPT</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/README.md">GPT4</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/gpt-series/gpt4/gpt-4-architecture-infrastructure-training-dataset-costs-vision-moe.md">GPT-4 Architecture, Infrastructure,Training Dataset, Costs, Vision, MoE</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/llama-series/README.md">LLaMa Series</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/llama-series/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/llama-series/llama.md">LLaMa</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/p5/README.md">P5</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/p5/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/p5/how-to-index-item-ids.md">How to Index Item IDs</a></li>
-</ul>
-</li>
-<li><a href="the-dawn-of-llm-era/qwen/README.md">Qwen</a>
-<ul>
-<li><a href="the-dawn-of-llm-era/qwen/_index.md">_index</a></li>
-<li><a href="the-dawn-of-llm-era/qwen/qwen-v2.md">Qwen-v2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="tuning/README.md">tuning</a>
-<ul>
-<li><a href="tuning/_index.md">_index</a></li>
-<li><a href="tuning/dpo.md">DPO</a></li>
-<li><a href="tuning/lora.md">Lora</a></li>
-<li><a href="tuning/neftune.md">NEFTune</a></li>
-<li><a href="tuning/p-tuning-v2.md">P-Tuning V2</a></li>
-<li><a href="tuning/p-tuning.md">P-Tuning</a></li>
-<li><a href="tuning/ppo.md">PPO</a></li>
-<li><a href="tuning/q-lora.md">Q-Lora</a></li>
-<li><a href="tuning/moe-lora.md">MOE-Lora</a></li>
-</ul>
-</li>
-<li><a href="hullusion-and-training-innovations/README.md">🤔 hullusion-and-training-innovations</a>
-<ul>
-<li><a href="hullusion-and-training-innovations/_index.md">_index</a></li>
-<li><a href="hullusion-and-training-innovations/lm-infinite.md">LM-Infinite</a></li>
-</ul>
-</li>
-<li><a href="knowledge-injection/README.md">knowledge-injection</a>
-<ul>
-<li><a href="knowledge-injection/_index.md">_index</a></li>
-<li><a href="knowledge-injection/can-lms-learn-new-entities-from-descriptions.md">Can LMs Learn New Entities from Descriptions?</a></li>
-</ul>
-</li>
-<li><a href="timeseries-prediction-of-llm/README.md">TimeSeries Prediction of LLM</a>
-<ul>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/README.md">TS-for-LLM</a>
-<ul>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/one-fits-all-power-general-time-series-analysis-by-pretrained-lm.md">One Fits All: Power General Time Series Analysis by Pretrained LM</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/llm4ts-two-stage-fine-tuning-for-time-series-forecasting-with-pre-trained-llms.md">LLM4TS: Two-Stage Fine-Tuning for Time-Series Forecasting with Pre-Trained LLMs</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/llm-for-time-series-text-prototype-aligned-embedding-to-activate-llms-ability-for-time-series.md">LLM for Time Series：Text Prototype Aligned Embedding to Activate LLM’s Ability for Time Series</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting.md">TEMPO: prompt-based generative pre-trained transformer for time series forecasting</a></li>
-<li><a href="timeseries-prediction-of-llm/ts-for-llm/large-language-models-are-zero-shot-time-series-forecasters-neurips2023.md">Large Language Models Are Zero-Shot Time Series Forecasters [NeurIPS2023]</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="other-papers/README.md">other-papers</a>
-<ul>
-<li><a href="other-papers/_index.md">_index</a></li>
-<li><a href="other-papers/flan.md">Flan</a></li>
-<li><a href="other-papers/where-to-go-next-for-recommendation-systems.md">Where to go Next for Recommendation Systems?</a></li>
-<li><a href="other-papers/tabllm/README.md">TabLLM</a>
-<ul>
-<li><a href="other-papers/tabllm/_index.md">_index</a></li>
-<li><a href="other-papers/tabllm/tree-based-models-won-in-tabular.md">Tree-based models won in tabular</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>$$
+(x_1, x_2, &hellip;,x_T):x_t \Rightarrow (x_t - b)/a \ b=min(x_t) -  \beta(max(x_i)-min(x_i))
+$$</p>
+<p>其中，beta是超参数，alpha是序列按位的百分位数。</p>
+<h2 id="针对随机性的改进">针对随机性的改进</h2>
+<p>由于是zero-shot，部分模型并不能do_sample=False，导致结果受到随机性影响。所以论文在预测时多次预测（20次）取平均。</p>
+<p>对文本生成的超参数（temperature scaling, logit bias, and nucleus sampling）做网格搜索，GPT搜索alpha、beta、temperature和precision，对LLaMa只搜索temperature，use α = 0.99, β = 0.3, precision = 3, nucleus = 0.9。</p>
+<h2 id="对生成概率改进由于生成的文本">对生成概率改进，由于生成的文本</h2>
+<!-- raw HTML omitted -->
+<p>由于数据已经经过标准化，所以只考虑小数部分的连续概率。</p>
+<h2 id="结论">结论</h2>
+<p>LLM可以找到数据的低复杂性解释，使他们能够zero-shot外推<a href="https://www.zhihu.com/search?q=%E6%95%B0%E5%80%BC%E5%BA%8F%E5%88%97&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3251779729%7D">数值序列</a></p>
 
   </div>
 
