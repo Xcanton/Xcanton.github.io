@@ -155,12 +155,26 @@
                 <li>
                     <a href="#%e5%ad%a3%e8%8a%82%e6%80%a7%e7%89%b9%e5%be%81seasonal%e9%87%87%e7%94%a8%e5%b1%80%e9%83%a8%e5%8a%a0%e6%9d%83%e7%a7%bb%e5%8a%a8%e5%b9%b3%e5%9d%87" aria-label="季节性特征（Seasonal，采用局部加权移动平均）">季节性特征（Seasonal，采用局部加权移动平均）</a></li>
                 <li>
-                    <a href="#%e6%ae%8b%e5%b7%ae%e9%a1%b9" aria-label="残差项">残差项</a>
+                    <a href="#%e6%ae%8b%e5%b7%ae%e9%a1%b9" aria-label="残差项">残差项</a></li></ul>
                 </li>
-            </ul>
-            </li>
-            </ul>
-            </li>
+                <li>
+                    <a href="#%e6%ad%a3%e5%88%99%e5%8c%96%e6%96%b9%e5%bc%8f" aria-label="正则化方式">正则化方式</a><ul>
+                        
+                <li>
+                    <a href="#%e6%95%b0%e6%8d%ae%e6%9e%84%e6%88%90%e5%90%8e" aria-label="数据构成后">数据构成后</a></li>
+                <li>
+                    <a href="#%e9%a2%84%e6%b5%8b%e5%90%8e" aria-label="预测后">预测后</a></li></ul>
+                </li>
+                <li>
+                    <a href="#patching" aria-label="Patching">Patching</a></li>
+                <li>
+                    <a href="#%e7%89%b9%e5%be%81%e6%b1%a0%e5%8f%ac%e5%9b%9e" aria-label="特征池召回">特征池召回</a></li></ul>
+                </li>
+                <li>
+                    <a href="#gpt%e8%be%93%e5%85%a5" aria-label="GPT输入">GPT输入</a></li>
+                <li>
+                    <a href="#%e5%8f%af%e8%a7%a3%e9%87%8a%e6%80%a7interpretability" aria-label="可解释性（Interpretability）">可解释性（Interpretability）</a>
+                </li>
             </ul>
             </li>
             </ul>
@@ -203,6 +217,59 @@ $$</p>
 <p>$$
 X^i_R=X_i-X^i_T - X^i_S
 $$</p>
+<h3 id="正则化方式">正则化方式</h3>
+<h4 id="数据构成后">数据构成后</h4>
+<p>$$
+{\hat x}<em>{Tt}^i = \gamma_T(x</em>{Tt}^i-\mathbb{E}[x_{Tt}^{i}]/\sqrt{Var[x_{Tt}^i]+\epsilon_T})+\beta_T
+$$</p>
+<ul>
+<li>$\mathbb{E}[x_{Tt}^{i}]$是平均数</li>
+<li>$Var[x_{Tt}^i]$是标准差</li>
+<li>$\gamma_T$和$\beta_T$是可学习的偏移参数</li>
+</ul>
+<p>在构成数据之后，每个组成部分都进行reverse instance normalization，能够（促进知识转移，并最大程度得减小转移损失？）。但相对应的，在输出前需要逆向标准化回来。</p>
+<h4 id="预测后">预测后</h4>
+<p>$$
+{\widehat Y}<em>{*t}^i=\sqrt{Var[x</em>{Tt}^i]+\epsilon_<em>} \cdot {(\frac{Y_{<em>t}^i-\beta_</em>} {\gamma_</em>})+\mathbb{E}[x_{Tt}^{i}]}
+$$</p>
+<h3 id="patching">Patching</h3>
+<p>对三个组成部分常规Patch</p>
+<p>$$
+\mathcal{P}_T^i \in
+\mathbb{R}^{L_P \times N}
+$$</p>
+<p>$$
+N = \lfloor \frac {(L-L_P)} {S} \rfloor + 2
+$$</p>
+<h3 id="特征池召回">特征池召回</h3>
+<p>除了时序信息以外，论文还从已有特征池（key是特征，value是预先写好的prompt文本）中根据不同组成部分召回相近的特征表达。</p>
+<p>$$
+V_K = {{(k_1,V_1),(k_2,V_2), \ldots, (k_M, V_M)}}
+$$</p>
+<ul>
+<li>M是特征池的大小</li>
+</ul>
+<p>对应的，针对给定的patch序列和特征的相似度计算公式为：</p>
+<p>$$
+\gamma(\mathcal{P}_T^i,k_m)=\mathcal{P}_T^i \cdot k_m / \Vert \mathcal{P}_T^i\Vert \Vert k_m\Vert
+$$</p>
+<p>模型将近似度选择的embedding一起end2end训练，对每个query的 $\mathcal{P}_T^i$ 召回 Top-K 个相近的prompt，并且拼接在query序列的前面。所以最后对每个组成部分的输入为：</p>
+<p>$$
+x_T=[V_{s1}; \ldots;V_{s \mathcal{K}};\mathcal{P}_T], 1 \leq \mathcal{K} \leq M
+$$</p>
+<h2 id="gpt输入">GPT输入</h2>
+<p>将三个组成部分拼接起来输入，但是文章也给出了一个替代方案：对每个组成部分单独输入GPT，将输出的向量反向标准化后加和。</p>
+<h2 id="可解释性interpretability">可解释性（Interpretability）</h2>
+<p>假设模型的三个组成部分跟输出的向量具有非线性的关系，可以通过GAM（generalized additive model）建模</p>
+<p>$$
+g(Y)=F_{\not o}+\sum_i{F_i(x_i)}+\sum_t{F_{\mathcal{I}<em>t}(x</em>{\mathcal{I}_t})}
+$$</p>
+<ul>
+<li>$\mathcal{I}_t$是多个组成部分交互的集合（a set of multiple instract components）</li>
+<li>$F_{\not o}$是归一化常数</li>
+<li>i是各个组成部分</li>
+</ul>
+<p>然后可以通过一阶系数（first-order sentitivity index）或者SHAP值（SHapley Additive exPlanations）来衡量不同组成部分的敏感性。</p>
 
   </div>
 
