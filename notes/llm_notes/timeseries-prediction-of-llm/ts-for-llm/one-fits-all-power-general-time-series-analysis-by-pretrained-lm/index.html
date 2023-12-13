@@ -143,7 +143,11 @@
                     <a href="#one-fits-all-power-general-time-series-analysis-by-pretrained-lm" aria-label="One Fits All: Power General Time Series Analysis by Pretrained LM">One Fits All: Power General Time Series Analysis by Pretrained LM</a><ul>
                         
                 <li>
-                    <a href="#%e6%a6%82%e8%a6%81" aria-label="概要">概要</a>
+                    <a href="#%e6%a6%82%e8%a6%81" aria-label="概要">概要</a></li>
+                <li>
+                    <a href="#instance-norm-channel%e7%bb%b4%e5%ba%a6%e7%9a%84%e6%a0%87%e5%87%86%e5%8c%96" aria-label="Instance Norm (Channel维度的标准化)">Instance Norm (Channel维度的标准化)</a></li>
+                <li>
+                    <a href="#layer-norm%e6%9c%89%e4%b8%a4%e4%b8%aa%e5%8f%82%e6%95%b0" aria-label="Layer Norm（有两个参数）">Layer Norm（有两个参数）</a>
                 </li>
             </ul>
             </li>
@@ -167,6 +171,12 @@
 <li>文章认为基于文本域训练的llm适用于时间序列的一个可能原因是， 自监督的self-attention模块在训练过程中学会了和和具体数据无关的一些运算规则，比如PCA（通过对比对比两个模块的中间结果），使之成为一个广义的计算引擎；</li>
 <li>以GPT2为backbone进行了时间序列异常检测、长短期预测等实验，效果均较好;</li>
 </ul>
+<!-- raw HTML omitted -->
+<h2 id="instance-norm-channel维度的标准化">Instance Norm (Channel维度的标准化)</h2>
+<h2 id="layer-norm有两个参数">Layer Norm（有两个参数）</h2>
+<p>$$
+y=\frac {x-\mathbb{E}[x]} {Var[x] + \epsilon} \cdot \gamma + \beta
+$$</p>
 
   </div>
 
