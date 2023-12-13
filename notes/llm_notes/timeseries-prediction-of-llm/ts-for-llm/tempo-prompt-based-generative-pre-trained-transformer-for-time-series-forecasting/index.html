@@ -140,8 +140,29 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting" aria-label="TEMPO: prompt-based generative pre-trained transformer for time series forecasting">TEMPO: prompt-based generative pre-trained transformer for time series forecasting</a>
+                    <a href="#tempo-prompt-based-generative-pre-trained-transformer-for-time-series-forecasting" aria-label="TEMPO: prompt-based generative pre-trained transformer for time series forecasting">TEMPO: prompt-based generative pre-trained transformer for time series forecasting</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bb%bb%e5%8a%a1%e5%ae%9a%e4%b9%89-%e5%ba%8f%e5%88%97%e9%a2%84%e6%b5%8b%e4%bb%bb%e5%8a%a1" aria-label="任务定义-序列预测任务">任务定义-序列预测任务</a></li>
+                <li>
+                    <a href="#%e5%8a%a0%e5%85%a5%e5%ba%8f%e5%88%97%e5%85%88%e9%aa%8c%e7%9f%a5%e8%af%86" aria-label="加入序列先验知识">加入序列先验知识</a><ul>
+                        
+                <li>
+                    <a href="#%e6%97%b6%e5%ba%8f%e6%95%b0%e6%8d%ae%e6%9e%84%e6%88%90" aria-label="时序数据构成">时序数据构成</a><ul>
+                        
+                <li>
+                    <a href="#%e9%95%bf%e6%9c%9f%e7%89%b9%e5%be%81trend" aria-label="长期特征（Trend）">长期特征（Trend）</a></li>
+                <li>
+                    <a href="#%e5%ad%a3%e8%8a%82%e6%80%a7%e7%89%b9%e5%be%81seasonal%e9%87%87%e7%94%a8%e5%b1%80%e9%83%a8%e5%8a%a0%e6%9d%83%e7%a7%bb%e5%8a%a8%e5%b9%b3%e5%9d%87" aria-label="季节性特征（Seasonal，采用局部加权移动平均）">季节性特征（Seasonal，采用局部加权移动平均）</a></li>
+                <li>
+                    <a href="#%e6%ae%8b%e5%b7%ae%e9%a1%b9" aria-label="残差项">残差项</a>
                 </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
             </ul>
         </div>
     </details>
@@ -152,6 +173,36 @@
 <ul>
 <li>论文地址：<a href="https://arxiv.org/abs/2310.04948">https://arxiv.org/abs/2310.04948</a></li>
 </ul>
+<h2 id="任务定义-序列预测任务">任务定义-序列预测任务</h2>
+<p>$$
+{\hat x}^i_{t},{\hat x}^i_{t+1},\ldots,{\hat x}^i_{t+H-1}=F({x}^i_{t-K},{x}^i_{t-K+1},\ldots,{x}^i_{t-1};{V_i};	\Phi)
+$$</p>
+<ul>
+<li>K是特征窗口长度，H是预测序列长度，通过过去K个序列值，预测下H个值</li>
+<li>当需要预测多个特征时，i可以为不同的特征编号</li>
+<li>$V_i$是对于特征V的prompt，$\phi$是模型参数</li>
+</ul>
+<p>与传统文本生成任务不同，Tempo按照时序预测的任务形式构成输入prompt，通过先验规则进行特征工程。</p>
+<h2 id="加入序列先验知识">加入序列先验知识</h2>
+<h3 id="时序数据构成">时序数据构成</h3>
+<p>$$
+X_i=X^i_T + X^i_S+X^i_R
+$$</p>
+<ul>
+<li>将原数据划分成长期特征、季节性特征和残差特征，一个输入数据由对应的三个特征值相加</li>
+</ul>
+<h4 id="长期特征trend">长期特征（Trend）</h4>
+<p>$$
+X_T \in \mathbb{R}^{n \times L}=\frac {1} {2k+1} \sum^k_{j=-k}(X_{i+j})
+$$</p>
+<h4 id="季节性特征seasonal采用局部加权移动平均">季节性特征（Seasonal，采用局部加权移动平均）</h4>
+<p>$$
+{Lowess\ Smoother}()
+$$</p>
+<h4 id="残差项">残差项</h4>
+<p>$$
+X^i_R=X_i-X^i_T - X^i_S
+$$</p>
 
   </div>
 
